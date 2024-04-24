@@ -1,0 +1,948 @@
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: #ebeae8;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu:hover {
+  transform: translateY(1px);
+}
+
+.fa.fa-bars:before {
+  font-size: 25px;
+  color: #000103;
+}
+
+.fa.fa-angle-double-down:before {
+  font-size: 33px;
+  color: #000103;
+}
+
+a.calendar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 230px;
+  height: 45px;
+  background: #000103;
+  border-radius: 200px;
+  color: #fcfdff;
+  font-size: 19px;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+}
+
+.navigationlist {
+  width: 190px;
+  height: 170px;
+position: fixed;
+  z-index: 999;
+  top:70px;
+  background: white;
+  left: 10px;
+}
+
+.urlnavigation {
+  text-decoration: none;
+  font-size: 19px;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  color: black;
+  text-align: left;
+}
+
+.navigation {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.navigation li:not(:first-child) {
+  padding-top: 15px;
+}
+
+#main, #invitation {
+  width: 100vw;
+  height: 100vh;
+}
+
+#timing {
+  width: 100vw;
+  height: 70vh;
+}
+
+#guestsQuastions {
+  width: 100vw;
+  height: 85vh;
+}
+
+#quastionslistsection {
+  width: 80%;
+}
+
+
+.line {
+  width: 2px;
+  height: 77%;
+  background-color: #ebeae8;
+  position: absolute;
+  left: 80px;
+  top: 185px;
+}
+
+.line2 {
+  width: 280px;
+  height: 2px;
+  background-color: #ebeae8;
+}
+
+.information {
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data {
+  position: absolute;
+  top: 87px;
+  left: 70px;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  /*font-weight: bold;*/
+  font-size: 25px;
+}
+.poster{
+  width: 600px;
+  height: 350px;
+  text-align: center;
+}
+
+.photo1 {
+  width: 440px;
+  height: 730px;
+  padding-bottom: 50px;
+  padding-top: 120px;
+}
+
+.names {
+  width: 50%;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 85px;
+}
+
+.name {
+  font-size: 80px;
+  font-family: 'Thryomanes', sans-serif;
+  text-align: center;
+}
+
+.coursive {
+  font-family: 'Celesta', sans-serif;
+font-size: 100px;
+ text-align: center;
+}
+
+.counterposter{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+}
+
+.counter {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+}
+
+.countdown-item {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 2em;
+}
+
+.label {
+  font-size: 0.8em;
+  color: #999;
+}
+
+#invitation {
+  text-align: center;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.appeal {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Scriptorama";
+  margin: 0;
+  padding-bottom: 17px;
+}
+
+.bottom {
+  padding-top: 50px;
+}
+
+.text {
+  width: 50%;
+}
+
+.textintext {
+  width: 90%;
+  font-size: 29px;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+}
+
+.textintext > p {
+  margin: 0;
+  padding-left: 90px;
+  margin-top: 7px;
+}
+
+.effect {
+  /*
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  */
+  font-family: 'Thryomanes', sans-serif;
+  font-weight: bold;
+  font-size: 37px;
+}
+
+.photoSection2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo2 {
+  width: 450px;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.circle.firstcircle{
+  background-color: #fafcff;
+  border: 2px solid #797a7a;
+  margin-right: 10px;
+}
+.circle.secondcircle{
+  background-color: #e3e5e8;
+  border: 2px solid #797a7a;
+  margin-right: 10px;
+}
+.circle.thirdcircle{
+  background-color: #cacbcc;
+  border: 2px solid #797a7a;
+  margin-right: 10px;
+}
+.circle.fourthcircle {
+  background-color: #797a7a;
+  border: 2px solid #797a7a;
+  margin-right: 10px;
+}
+.circle.fifthcircle{
+  background-color: #050505;
+  border: 2px solid #797a7a;
+}
+
+#timing {
+  text-align: center;
+}
+
+.timingwrapper{
+  position: relative;
+}
+
+table {
+  margin: auto;
+}
+th {
+  /*font-family: 'Thryomanes', sans-serif;*/
+  /*font-family: 'Celesta', sans-serif;*/
+  /*font-weight: bold;*/
+  font-family: "Scriptorama";
+  font-size: 37px;
+  line-height: 25px;
+}
+td {
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  /*font-family: 'Thryomanes', sans-serif;*/
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+th, td {
+  vertical-align: top;
+}
+.eventadress {
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 20px;
+  font-weight: initial;
+}
+.timing {
+  font-size: 45px;
+
+}
+
+.padding {
+  padding-bottom: 45px
+}
+
+.line3 {
+  width: 2px;
+  height: 100%;
+  background-color: #ebeae8;
+  position: absolute;
+  left: 80px;
+  top: 0;
+}
+.line4 {
+  width: 2px;
+  height: 100%;
+  background-color: #ebeae8;
+  position: absolute;
+  right: 80px;
+  top: 0
+}
+
+.line5 {
+  width: 480px;
+  height: 2px;
+  background-color: #ebeae8;
+  margin-top: 25px;
+}
+
+.line6 {
+  width: 480px;
+  margin-top: -5px;
+  min-height: 2px;
+  background-color: #ebeae8;
+}
+
+.line7 {
+  width: 2px;
+  height: 90%;
+  background-color: #ebeae8;
+  position: absolute;
+  left: 80px;
+  bottom: 100px;
+  top: 20px;
+}
+
+.dress, #presence{
+  width:50%;
+  height:100%
+}
+.dress {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headline {
+  text-align: center;
+  margin-top: 0;
+}
+
+.textindress {
+  text-align: center;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 25px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+#dressandpresence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#presence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 300px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Thryomanes', sans-serif;
+  font-size: 37px;
+  width: 620px;
+  height: 120px;
+border-color: #ebeae8;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 60px;
+  background-image: linear-gradient(to right, white 0%, #ebeae8 51%, #555555 100%);
+  margin-top: -10px;
+  cursor: pointer;
+}
+.button:hover, .cancel:hover, .send:hover {
+  background-position: right center;
+}
+
+.doyouhavequestions {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doyouhavequestions > label {
+  font-family: 'Thryomanes', sans-serif;
+  font-size: 32px;
+  margin-right: 100px;
+}
+.doyouhavequestions > input {
+  width: 400px;
+  height: 100px;
+  border: 2px solid #797a7a;
+  border-radius: 5px;
+}
+
+.doyouhavequestions > input::placeholder {
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 18px;
+  color: black;
+  padding-left: 10px;
+}
+
+#guestsQuastions {
+  text-align: center;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
+}
+
+.questionbutton {
+  margin-top: 20px;
+  margin-left: 745px;
+  font-family: 'Thryomanes', sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: #ebeae8;
+  border-radius: 5px;
+  border: 2px solid #797a7a;
+}
+
+.footer {
+  margin-right: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.wait {
+  font-size: 40px;
+}
+
+.photo3 {
+  width: 450px;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+
+.withlove {
+  font-size: 40px;
+}
+
+#quastionslistsection {
+display: flex;
+  flex-direction: column;
+}
+
+.thanksnotification {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.thanksnotification > p {
+  margin-top: 30px;
+  margin-right: 40px;
+  text-align: left;
+}
+
+
+.notification {
+  margin: auto;
+  width: 700px;
+  height: 300px;
+  border: 5px solid #ebeae8;
+  border-radius: 20px;
+}
+
+#questtionlist {
+  margin: auto;
+  width: 700px;
+  height: auto;
+  border: 5px solid #ebeae8;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.glitter {
+  width: 50%;
+}
+
+.cancel {
+  font-family: 'Thryomanes', sans-serif;
+  font-size: 25px;
+  width: 455px;
+  height: 80px;
+  border-color: #ebeae8;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 60px;
+  background-image: linear-gradient(to right, white 0%, #ebeae8 51%, #555555 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#questtionlist > p {
+  text-align: center;
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  z-index: 1999;
+}
+
+.quastions {
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 20px;
+}
+
+.quastions > div {
+  display: flex;
+  align-items: center;
+}
+
+.guestsname > input::placeholder {
+  font-family: 'PF DinText Pro Thin', sans-serif;
+  font-size: 18px;
+  color: black;
+  padding-left: 20px;
+}
+.guestsname > input {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #797a7a;
+  border-radius: 5px;
+}
+
+.quastion {
+  font-family: 'Thryomanes', sans-serif;
+  /*font-weight: bold;*/
+  font-size: 20px;
+  text-decoration: underline solid #ebeae8;
+  text-decoration-thickness: 2px;
+  padding-left: 20px;
+}
+
+.trqua label {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.answer {
+  padding: 10px 0 5px 35px;
+}
+
+.answer > label {
+  cursor: pointer;
+}
+
+.send {
+  font-family: 'Thryomanes', sans-serif;
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+  border-color: #ebeae8;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 60px;
+  background-image: linear-gradient(to right, white 0%, #ebeae8 51%, #555555 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.thanks {
+  margin: auto;
+  width: 700px;
+  height: 150px;
+  border: 5px solid #ebeae8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.thanks > p {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.photo4 {
+  width: 100px;
+  margin: 20px 0 10px 20px;
+}
+
+.connect {
+  width: 50px;
+  margin-right: 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.connect:hover {
+  transform: translateY(-5px);
+}
+
+.allconnect {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+@media (max-width: 480px) {
+  #main, #invitation {
+    height: auto;
+  }
+
+  .data, .line, .line2, .line3, .line4, .line5, .line6, .line7 {
+    display: none;
+  }
+
+  .information, #invitation, #timing, #dressandpresence, #quastionslistsection, #guestsQuastions {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .poster {
+    height: 200px;
+  }
+
+  .appeal {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .names {
+    margin: 0;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .name {
+    font-size: 42px;
+  }
+
+  .coursive {
+    font-size: 70px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .photo1 {
+    width: 80%;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    /*align-items: flex-start;*/
+  }
+
+  .photoSection2 {
+    width: auto;
+  }
+
+  .photo2, .photo3 {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+  }
+
+  .photo3 {
+    margin: 30px 0;
+  }
+
+  #guestsQuastions {
+    height: auto;
+    width: 100%;
+  }
+
+  .photo2, .counter, .appeal, .button, .poster, #presence, .photo3, .notification, #questtionlist, .cancel, .thanks {
+    max-width: 100%;
+  }
+
+  .countdown-item {
+    margin: 0;
+  }
+
+  .countdown-item span {
+    font-size: 27px;
+  }
+
+  .counterposter {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .counter {
+    gap: 15px;
+  }
+
+  .textintext > p {
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .textintext {
+    width: auto;
+  }
+
+  .effect {
+    font-size: 30px;
+  }
+
+  .textintext > p.bottom {
+    margin-top: 20px;
+  }
+
+  table {
+    width: 80%;
+    margin: auto;
+  }
+
+  th {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 20px;
+    padding-left: 50px;
+  }
+
+  .textindress > p {
+    width: 100%;
+  }
+
+  .textindress {
+    width: 400px;
+    font-size: 23px;
+  }
+
+  .circles {
+    margin-top: 10px;
+  }
+
+  .padding {
+    padding-bottom: 30px;
+    padding-top: 5px;
+  }
+
+  #presence {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .button {
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .footer {
+    height: auto;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .withlove {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .mobileText {
+    font-size: 25px;
+  }
+
+  .onlyMobile {
+    display: flex;
+  }
+
+  .connect {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .notification {
+    height: auto;
+    margin: 30px 0;
+  }
+
+  .thanksnotification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .thanksnotification > p, .cancel {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .glitter {
+    width: 60%;
+    margin-top: -15px;
+  }
+
+  .cancel {
+    margin: 0 15px 20px 15px;
+  }
+
+  #questtionlist {
+    margin-top: 0;
+  }
+
+  #questtionlist > p {
+    margin-bottom: 0;
+  }
+
+  .guestsname > input {
+    width: auto;
+  }
+
+  .photo4 {
+    width: 30%;
+    margin: 25px 15px 10px 20px;
+  }
+
+  .thanks {
+    width: auto;
+    height: auto;
+  }
+
+  .thanks > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 23px;
+  }
+
+  #timing {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  #dressandpresence {
+    margin-top: 30px;
+  }
+
+  .headline {
+    margin-bottom: auto;
+    width: 100%;
+  }
+
+  .dress {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+@import "assets/fonts/_fonts.css";
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main, section, body {
+  max-width: 100%;
+}

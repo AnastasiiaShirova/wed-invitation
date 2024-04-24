@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Scriptorama";
+  src: url("./scriptorama.eot"); /* IE9 Compat Modes */
+  src: url("./scriptorama.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./scriptorama.otf") format("opentype"), /* Open Type Font */
+  url("./scriptorama.svg") format("svg"), /* Legacy iOS */
+  url("./scriptorama.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("./scriptorama.woff") format("woff"), /* Modern Browsers */
+  url("./scriptorama.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

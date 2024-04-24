@@ -1,0 +1,258 @@
+<header>
+  <div class="nav-list">
+    <div (click)="isNavigationOpened = !isNavigationOpened" class="menu">
+      <i class="fa fa-bars" *ngIf="!isNavigationOpened"></i>
+      <i class="fa fa-angle-double-down" aria-hidden="true" *ngIf="isNavigationOpened"></i>
+    </div>
+    <a class="calendar" target="_blank"
+       href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N2ppcHYxcjVibG1wYWZibGxjbWp0OThmMGwgZDIyMzRjN2MwZjQ5YWVmOTY1NWVlMDRjN2JhMGI3OGRjNzUyNDI3Y2JhYzA5OGY5MGM0NmVjMTc3NzI5N2VlY0Bn&tmsrc=d2234c7c0f49aef9655ee04c7ba0b78dc752427cbac098f90c46ec1777297eec%40group.calendar.google.com">Добавить
+      в календарь</a>
+  </div>
+</header>
+<main>
+<nav *ngIf="isNavigationOpened" class="navigationlist">
+  <div>
+    <ul class="navigation">
+      <li><a href="#main" class="urlnavigation">Главная</a></li>
+      <li><a href="#invitation" class="urlnavigation">Приглашение</a></li>
+      <li><a href="#timing" class="urlnavigation">Тайминг дня</a></li>
+      <li><a href="#qua" class="urlnavigation">Ваши вопросы</a></li>
+    </ul>
+  </div>
+</nav>
+<section id="main">
+  <div class="data">
+    <div>25</div>
+    <div>05</div>
+    <div>25</div>
+  </div>
+  <div class="line"></div>
+  <div class="information">
+    <img class="photo1" alt="Фото жениха и невесты"
+         src="//avatars.mds.yandex.net/i?id=cf92ce99de68d7978c79c5b1d2495174_l-5234679-images-thumbs&ref=rim&n=13&w=1080&h=1350">
+    <div class="names">
+      <div class="poster">
+        <div class="name">ЖЕНИХ</div>
+        <div class="coursive">and</div>
+        <div class="name">НЕВЕСТА</div>
+      </div>
+      <div class="line2"></div>
+      <p class="counterposter">НАША ЖИЗНЬ СКОРО ИЗМЕНИТСЯ</p>
+      <div class="counter">
+        <div class="countdown">
+          <div class="countdown-item">
+            <span id="days">{{Math.floor(duration.asDays())}}</span>
+            <span class="label">Дней</span>
+          </div>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">{{duration.hours()}}</span>
+          <span class="label">Часов</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">{{duration.minutes()}}</span>
+          <span class="label">Минут</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">{{duration.seconds()}}</span>
+          <span class="label">Секунд</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="invitation">
+  <div class="text">
+  <p class="appeal">Дорогие гости!</p>
+    <div class="textintext">
+  <p>Мы рады сообщить Вам, что
+  <p class="effect">25 МАЯ 2025 ГОДА</p>
+  <p>состоится самое главное торжество</p>
+      <p>в нашей жизни -</p>
+  <p class="effect">ДЕНЬ НАШЕЙ СВАДЬБЫ!</p>
+  <p>Приглашаем Вас разделить с нами радость</p>
+      <p>этого незабываемого дня.</p>
+  <p class="bottom">Ваши Жених и Невеста.</p>
+    </div>
+  </div>
+  <div class="photoSection2">
+  <img src="assets/HmNRgURM3H4.jpg" class="photo2">
+  </div>
+</section>
+
+<section id="timing">
+  <div class="timingwrapper">
+  <p class="effect timing">ТАЙМИНГ ДНЯ</p>
+  <div class="line3"></div>
+  <div class="line4"></div>
+  <table>
+    <tr>
+      <th rowspan="2">15:00</th>
+      <td>ТОРЖЕСТВЕННАЯ РЕГИСТРАЦИЯ БРАКА</td>
+    </tr>
+    <tr>
+      <td class="eventadress padding">Санкт-Петербург, Английская набережная, 28</td>
+    </tr>
+
+    <tr>
+      <th rowspan="2">16:00</th>
+      <td>НАЧАЛО БАНКЕТА</td>
+
+    </tr>
+    <td class="eventadress padding">Свердловская набережная, 60</td>
+    <tr>
+      <th>21:00</th>
+      <td class="padding">СВАДЕБНЫЙ ТОРТ</td>
+    </tr>
+    <tr>
+      <th>22:30</th>
+      <td>ЗАВЕРШЕНИЕ ВЕЧЕРА БЕНГАЛЬСКИМИ ОГНЯМИ</td>
+    </tr>
+  </table>
+    </div>
+</section>
+<section id="dressandpresence">
+  <div class="dress">
+  <p class="headline effect">DRESS CODE</p>
+  <p class="textindress">БУДЕМ БЛАГОДАРНЫ, ЕСЛИ ПРИ ВЫБОРЕ НАРЯДОВ,</p>
+    <p class="textindress">ВЫ ПРИДЕРЖИТЕСЬ СЛЕДУЮЩЕЙ ПАЛИТРЫ:</p>
+  <div class="circles">
+    <div class="circle firstcircle"></div>
+    <div class="circle secondcircle"></div>
+    <div class="circle thirdcircle"></div>
+    <div class="circle fourthcircle"></div>
+    <div class="circle fifthcircle"></div>
+  </div>
+    <div class="line5"></div>
+  </div>
+
+ <div id="presence" *ngIf="!isQuastionsListOpened">
+  <div (click)="isQuastionsListOpened=true" class="button">ПОДТВЕРДИТЬ ПРИСУТСТВИЕ</div>
+ </div>
+
+  <section *ngIf="isQuastionsListOpened" id="quastionslistsection">
+    <div class="notification">
+      <div class="thanksnotification">
+        <img src="https://emojis.wiki/thumbs/emojis/sparkles.webp" class="glitter">
+        <p class="textindress">Спасибо, что подтвердили своё присутствие! <br>Пожалуйста, заполните анкету, расположенную ниже.</p>
+      </div>
+      <div (click)="isQuastionsListOpened=false" class="cancel">ОТМЕНИТЬ ПОДТВЕРЖДЕНИЕ</div>
+    </div>
+
+    <div id="questtionlist">
+      <p>Пожалуйста, ответьте на вопросы, которые для Вас подготовили <br>Жених и Невеста.</p>
+      <form [formGroup]="form">
+        <div class="quastions">
+          <div class="trqua">
+            <label for="name" class="quastion">ПОЖАЛУЙСТА, ПРЕДСТАВЬТЕСЬ!</label>
+          </div>
+          <div class="guestsname answer">
+            <input type="text" id="name" placeholder="Введите имя" formControlName="name">
+          </div>
+          <div class="guestsname answer">
+            <input type="text" id="secondname" placeholder="Введите фамилию" formControlName="secondName">
+          </div>
+
+          <div class="trqua">
+            <label class="quastion">ВАМ НУЖЕН ТРАНСФЕР?</label>
+          </div>
+          <div class="answer">
+            <input id="a1" type="radio" formControlName="transfer" [value]="TransferAnswer.No"/>
+            <label for="a1">Нет</label>
+          </div>
+          <div class="answer">
+            <input id="a2" type="radio" formControlName="transfer" [value]="TransferAnswer.OnlyFromPalace"/>
+            <label for="a2">Только из Дворца бракосочетания в банкетный зал</label>
+          </div>
+          <div class="answer">
+            <input id="a3" type="radio" formControlName="transfer" [value]="TransferAnswer.OnliAfterEvent"/>
+            <label for="a3">Только после торжества</label>
+          </div>
+          <div class="answer">
+            <input id="a4" type="radio" formControlName="transfer" [value]="TransferAnswer.Always"/>
+            <label for="a4">На всех этапах мероприятия</label>
+          </div>
+
+          <div class="trqua">
+            <label class="quastion">КАКИЕ У ВАС ПРЕДПОЧТЕНИЯ В ЕДЕ?</label>
+          </div>
+          <div class="answer">
+            <input id="b1" type="radio" formControlName="food" [value]="FoodAnswer.No"/>
+            <label for="b1">Нет предпочтений</label>
+          </div>
+          <div class="answer">
+            <input id="b2" type="radio" formControlName="food" [value]="FoodAnswer.Meat"/>
+            <label for="b2">Предпочитаю мясо</label>
+          </div>
+          <div class="answer">
+            <input id="b3" type="radio" formControlName="food" [value]="FoodAnswer.Fish"/>
+            <label for="b3">Предпочитаю рыбу</label>
+          </div>
+          <div class="answer">
+            <input id="b4" type="radio" formControlName="food" [value]="FoodAnswer.Vegan"/>
+            <label for="b4">Предпочитаю вегетарианское меню</label>
+          </div>
+
+          <div class="trqua">
+            <label class="quastion">КАКОЙ АЛКОГОЛЬ ВЫ ПРЕДПОЧИТАЕТЕ?</label>
+          </div>
+          <div class="answer" formArrayName="alcohol" *ngFor="let type of Object.values(Alcohol); index as index">
+            <input id="c{{index}}" type="checkbox" [formControlName]="index"/>
+            <label for="c{{index}}">{{ type }}</label>
+          </div>
+
+          <div class="trqua">
+            <label class="quastion">С ВАМИ БУДЕТ РЕБЁНОК?</label>
+          </div>
+          <div class="answer">
+            <input id="d1" type="radio" formControlName="child" [value]="ChildAnswer.Yes"/>
+            <label for="d1">Да</label>
+          </div>
+          <div class="answer">
+            <input id="d2" type="radio" formControlName="child" [value]="ChildAnswer.No"/>
+            <label for="d2">Нет</label>
+          </div>
+        </div>
+
+        <div (click)="sendButton = true; onSubmitClick()" class="send">ОТПРАВИТЬ ОТВЕТЫ</div>
+      </form>
+    </div>
+    <div *ngIf="sendButton" class="thanks">
+      <img src="assets/heart.png" class="photo4">
+      <p class="textindress">Спасибо, {{ form.value.name }}! <br>Ваши ответы очень помогут нам при организации праздника.</p>
+    </div>
+  </section>
+
+  <div class="line6"></div>
+  <div class="doyouhavequestions">
+  <div class="name wait mobileText" id="qua">ВОЗНИКЛИ ВОПРОСЫ?</div>
+    <div class="allconnect">
+    <div>
+      <a href="https://t.me/+79819655605" target="_blank">
+      <img src="assets/tg2.png" class="connect">
+      </a>
+    </div>
+    <div>
+      <a href="tel:+79819655605">
+      <img src="assets/phone2.png" class="connect">
+      </a>
+    </div>
+    <div>
+      <a href="https://wa.me/+79819655605" target="_blank">
+      <img src="assets/wa.png" class="connect">
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="guestsQuastions">
+    <div class="line7"></div>
+    <div class="footer">
+    <p class="name wait mobileText">ЖДЁМ ВАС НА ТОРЖЕСТВЕ!</p>
+    <p class="appeal withlove">С любовью, <br class="onlyMobile">Жених и Невеста.</p>
+    </div>
+    <img src="assets/photo3.jpg" class="photo3">
+</section>
+</main>
